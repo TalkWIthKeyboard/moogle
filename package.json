@@ -1,0 +1,38 @@
+{
+  "name": "alfred-moogle",
+  "version": "0.0.0",
+  "description": "The workflow tool in alfred 3 to search and download movies.",
+  "license": "MIT",
+  "repository": "TalkWithKeyboard/alfred-moogle",
+  "author": {
+    "name": "Wei Song",
+    "email": "songwei@ruguoapp.com",
+    "url": "sw77.live"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
