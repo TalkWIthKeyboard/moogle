@@ -22,7 +22,8 @@
     "index_name.js",
     "openThunder.scpt",
     "icon.png",
-    "info.plist"
+    "info.plist",
+    "thunder.js"
   ],
   "keywords": [
     "alfred",
@@ -31,7 +32,8 @@
   ],
   "dependencies": {
     "alfy": "^0.6.0",
-    "jxa": "^2.0.3"
+    "jxa": "^2.0.3",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
