@@ -1,6 +1,6 @@
 {
   "name": "alfred-moogle",
-  "version": "2.0.0",
+  "version": "3.1.0",
   "description": "The workflow tool in alfred 3 to search and download movies.",
   "license": "MIT",
   "repository": "TalkWithKeyboard/moogle",
@@ -23,7 +23,9 @@
     "openThunder.scpt",
     "icon.png",
     "info.plist",
-    "thunder.js"
+    "thunder.js",
+    "6B1E26C6-0BD9-4EEA-B530-8A94CE6BB903.png",
+    "48243082-22E2-45D4-ACF6-290FA6AFAD95.png"
   ],
   "keywords": [
     "alfred",
