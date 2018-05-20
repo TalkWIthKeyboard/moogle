@@ -2,14 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>moogle</string>
 	<key>bundleid</key>
 	<string>live.sw77.moogle</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>48243082-22E2-45D4-ACF6-290FA6AFAD95</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D1AD2CA-4D19-491F-94C4-94639C56F4A0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5D1AD2CA-4D19-491F-94C4-94639C56F4A0</key>
+		<array/>
 		<key>6B1E26C6-0BD9-4EEA-B530-8A94CE6BB903</key>
 		<array>
 			<dict>
@@ -24,40 +37,101 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Wei Song</string>
+	<key>description</key>
+	<string>The workflow tool in alfred 3 to search and download movies.</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>moogle</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node thunder.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>5D1AD2CA-4D19-491F-94C4-94639C56F4A0</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>moogle</string>
+				<string>mna</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index_name.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>The workflow tool in alfred 3 to search and download movies.</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6B1E26C6-0BD9-4EEA-B530-8A94CE6BB903</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mla</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -86,7 +160,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>6B1E26C6-0BD9-4EEA-B530-8A94CE6BB903</string>
+			<string>48243082-22E2-45D4-ACF6-290FA6AFAD95</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -95,20 +169,31 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>48243082-22E2-45D4-ACF6-290FA6AFAD95</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
 		<key>5D1AD2CA-4D19-491F-94C4-94639C56F4A0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>110</integer>
 		</dict>
 		<key>6B1E26C6-0BD9-4EEA-B530-8A94CE6BB903</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>110</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/talkwithkeyboard/alfred-moogle#readme</string>
 </dict>
 </plist>
